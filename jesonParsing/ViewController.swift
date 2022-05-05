@@ -78,7 +78,7 @@ class ViewController: UIViewController {
             }
             self.readData(fromURLStr: urlStr)
         }.resume()
-//        hey
+
     }
 }
 extension ViewController:UITableViewDataSource,UITableViewDelegate {
