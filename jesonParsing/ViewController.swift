@@ -25,6 +25,7 @@ class ViewController: UIViewController {
         readData (fromURLStr: "https://gorest.co.in/public/v2/users")
     }
     func readData(fromURLStr: String){
+        //reading data from url https://gorest.co.in/public/v2/users
         guard let url:URL = URL(string: fromURLStr) else {
             return
         }
