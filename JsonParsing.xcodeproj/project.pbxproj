@@ -19,7 +19,7 @@
 
 /* Begin PBXFileReference section */
 		BB0F96E42820F1AD00286C5C /* jsonfile1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = jsonfile1.json; sourceTree = "<group>"; };
-		BB412432281E9B2E00713CB7 /* jesonParsing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jesonParsing.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB412432281E9B2E00713CB7 /* JsonParsing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JsonParsing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB412435281E9B2E00713CB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB412437281E9B2E00713CB7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		BB412439281E9B2E00713CB7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -52,7 +52,7 @@
 		BB412433281E9B2E00713CB7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BB412432281E9B2E00713CB7 /* jesonParsing.app */,
+				BB412432281E9B2E00713CB7 /* JsonParsing.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -76,9 +76,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BB412431281E9B2E00713CB7 /* jesonParsing */ = {
+		BB412431281E9B2E00713CB7 /* JsonParsing */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BB412446281E9B2F00713CB7 /* Build configuration list for PBXNativeTarget "jesonParsing" */;
+			buildConfigurationList = BB412446281E9B2F00713CB7 /* Build configuration list for PBXNativeTarget "JsonParsing" */;
 			buildPhases = (
 				BB41242E281E9B2E00713CB7 /* Sources */,
 				BB41242F281E9B2E00713CB7 /* Frameworks */,
@@ -88,9 +88,9 @@
 			);
 			dependencies = (
 			);
-			name = jesonParsing;
+			name = JsonParsing;
 			productName = jesonParsing;
-			productReference = BB412432281E9B2E00713CB7 /* jesonParsing.app */;
+			productReference = BB412432281E9B2E00713CB7 /* JsonParsing.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -108,7 +108,7 @@
 					};
 				};
 			};
-			buildConfigurationList = BB41242D281E9B2E00713CB7 /* Build configuration list for PBXProject "jesonParsing" */;
+			buildConfigurationList = BB41242D281E9B2E00713CB7 /* Build configuration list for PBXProject "JsonParsing" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -121,7 +121,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BB412431281E9B2E00713CB7 /* jesonParsing */,
+				BB412431281E9B2E00713CB7 /* JsonParsing */,
 			);
 		};
 /* End PBXProject section */
@@ -349,7 +349,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BB41242D281E9B2E00713CB7 /* Build configuration list for PBXProject "jesonParsing" */ = {
+		BB41242D281E9B2E00713CB7 /* Build configuration list for PBXProject "JsonParsing" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BB412444281E9B2F00713CB7 /* Debug */,
@@ -358,7 +358,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BB412446281E9B2F00713CB7 /* Build configuration list for PBXNativeTarget "jesonParsing" */ = {
+		BB412446281E9B2F00713CB7 /* Build configuration list for PBXNativeTarget "JsonParsing" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BB412447281E9B2F00713CB7 /* Debug */,
