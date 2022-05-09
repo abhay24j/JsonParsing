@@ -13,18 +13,14 @@ struct User :Codable{
     var gender: String?
     var status: String?
 }
-
 class ViewController: UIViewController {
-    
     @IBOutlet weak var userTable: UITableView!
     var userArray = [User]()
-    let customQueue = DispatchQueue.init(label: "CustomQueue", qos: .background, attributes: .concurrent, autoreleaseFrequency: .inherit, target: nil)
+    let customQueue = DispatchQueue.init(label: "CustomQueue", qos: .background, attributes: .concurrent, target: nil)
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpData()
-        
     }
-    
     func setUpData(){
         readData (fromURLStr: "https://gorest.co.in/public/v2/users")
     }
@@ -39,7 +35,6 @@ class ViewController: UIViewController {
         let session = URLSession.shared.dataTask(with: urlRequest) { data, urlResponse,error in
             if let response = urlResponse as? HTTPURLResponse{
                 if(response.statusCode == 200){
-                    //   print("request has successfully executed")
                 }
                 if let responseData = data{
                     if let userArray: [User] = try? JSONDecoder().decode([User].self, from: responseData){
@@ -55,9 +50,8 @@ class ViewController: UIViewController {
     }
     @IBAction func createNewEntry(_ sender: Any) {
         let headerParams = ["Accept":"appliaction/json","Content-Type": "application/json","Authorization":"Bearer 7ac80325b16a21741993b2a7d7abaa1df48503016171d0a9b79d89cfe950c7e8"]
-        let postParams = ["name":"Abhay KR","status":"Active","Email":"abhay@gmail.com","Gender":"male",]
+        let postParams = ["name":"Abhay KR 1 assa","status":"active","email":"abhay12345@gmail.com","gender":"male"]
         createNewUser(urlStr: "https://gorest.co.in/public/v2/users", postParam: postParams, headerParams: headerParams)
-       
     }
     func createNewUser(urlStr:String,postParam:[String:String],headerParams:[String:String]){
         guard let url:URL = URL(string: urlStr) else {
@@ -78,7 +72,6 @@ class ViewController: UIViewController {
             }
             self.readData(fromURLStr: urlStr)
         }.resume()
-
     }
 }
 extension ViewController:UITableViewDataSource,UITableViewDelegate {

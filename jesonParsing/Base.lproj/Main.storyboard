@@ -106,7 +106,7 @@
                                     <color key="baseForegroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="createNewEntry:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lxv-y3-2pN"/>
+                                    <action selector="createNewEntry:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ufo-VZ-kZL"/>
                                 </connections>
                             </button>
                         </subviews>
