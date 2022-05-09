@@ -25,6 +25,7 @@ class ViewController: UIViewController {
         readData (fromURLStr: "https://gorest.co.in/public/v2/users")
     }
     func readData(fromURLStr: String){
+        // updated code to handle fetch url
         guard let url:URL = URL(string: fromURLStr) else {
             return
         }
@@ -49,6 +50,7 @@ class ViewController: UIViewController {
         session.resume()
     }
     @IBAction func createNewEntry(_ sender: Any) {
+        //handle creation of new user
         let headerParams = ["Accept":"appliaction/json","Content-Type": "application/json","Authorization":"Bearer 7ac80325b16a21741993b2a7d7abaa1df48503016171d0a9b79d89cfe950c7e8"]
         let postParams = ["name":"Abhay KR 1 assa","status":"active","email":"abhay12345@gmail.com","gender":"male"]
         createNewUser(urlStr: "https://gorest.co.in/public/v2/users", postParam: postParams, headerParams: headerParams)
